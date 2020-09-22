@@ -1,52 +1,41 @@
-# Prerequisites
-*.d
+#include <stdio.h> 
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main(){
 
-# Linker output
-*.ilk
-*.map
-*.exp
 
-# Precompiled Headers
-*.gch
-*.pch
+//Pozitif Mantık 1
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+int harcama,bonus=0;
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+printf("Bir değer giriniz: ");
+scanf("%d",&harcama);
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+if(harcama>2000){
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+    bonus=100;
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+}
+
+
+else {
+
+    if (harcama>1000)
+    {
+        bonus=50;
+    }
+    
+    else
+    {
+        bonus=10;
+    }
+    
+    
+}
+
+printf("Bonus: %d",bonus);
+
+
+    return 0;
+}
+
+
